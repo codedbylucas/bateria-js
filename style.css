@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #00f7ff;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.key {
+    width: 100px;
+    height: 100px;
+    background: #222;
+    border: 2px solid #00f7ff;
+    color: #00f7ff;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease, transform 0.1s ease;
+}
+
+.key:hover {
+    transform: scale(1.1);
+    background-color: #00f7ff22;
+}
+
+.key.active {
+    background-color: #00f7ff;
+    color: #000;
+    box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+    transform: scale(1.2);
+}
+
+.composer {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.composer #input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.composer button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00f7ff;
+    background: transparent;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.composer button:hover {
+    background-color: #00f7ff;
+    color: #000;
+    box-shadow: 0 0 10px #00f7ff;
+}
+
+footer {
+    color: #888;
+    font-size: 14px;
+    margin-top: 20px;
+}
